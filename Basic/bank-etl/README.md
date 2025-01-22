@@ -34,14 +34,13 @@ Additionally, the project performs queries on the database to demonstrate its ut
 ## Project Structure
 
 ```
-.
-├── bankEtl/
-│   ├── code_log.txt               # Log file for the ETL process
-│   ├── exchange_rate.csv          # Input CSV with exchange rates
-│   ├── Largest_banks_data.csv     # Output CSV with transformed data
-│   ├── Banks.db                   # SQLite database containing processed data
-├── main.py                        # Main script containing ETL pipeline
-├── README.md                      # Project documentation (this file)
+├── bank-etl
+├── code_log.txt               # Log file for the ETL process
+├── exchange_rate.csv          # Input CSV with exchange rates
+├── Largest_banks_data.csv     # Output CSV with transformed data
+├── Banks.db                   # SQLite database containing processed data
+├── main.py                    # Main script containing ETL pipeline
+├── README.md                  # Project documentation (this file)
 ```
 
 ---
@@ -51,32 +50,6 @@ Additionally, the project performs queries on the database to demonstrate its ut
 - Python 3.7+
 - Libraries: `requests`, `pandas`, `sqlite3`, `bs4`, `logging`
 
-Install dependencies using:
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Usage
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/bank-etl.git
-   cd bank-etl
-   ```
-
-2. Run the ETL pipeline:
-   ```bash
-   python main.py
-   ```
-
-3. Check the output:
-   - Processed data will be available in `bankEtl/Largest_banks_data.csv`.
-   - A SQLite database `Banks.db` will be created with the processed data.
-   - Logs will be saved in `bankEtl/code_log.txt`.
-
----
 
 ## Key Functions
 
@@ -122,7 +95,7 @@ Demonstrates SQL querying:
 
 ## Logs
 
-The script logs all activities in `bankEtl/code_log.txt`, including:
+The script logs all activities in `code_log.txt`, including:
 - Start and completion of each ETL step.
 - Key transformation details.
 - Errors, if any occur.

@@ -41,43 +41,10 @@ This project implements an **ETL (Extract, Transform, Load)** pipeline to proces
 
 ```plaintext
 .
-├── etl_pipeline.py          # Main Python script containing the ETL pipeline
+├── main.py          # Main Python script containing the ETL pipeline
 ├── etl_project_log.txt      # Log file generated during the ETL process
 ├── Countries_by_GDP.csv     # Output CSV file with transformed data
 ├── World_Economies.db       # SQLite database containing the loaded data
 └── README.md                # Documentation for the project
 ```
 
----
-
-## How to Run the Project
-
-### Prerequisites
-- Python 3.8 or higher installed on your system.
-- Install the required libraries:
-  ```bash
-  pip install pandas numpy requests beautifulsoup4
-  ```
-
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shaik-noor/python-projects.git.git
-   cd etl-country-gdp
-   ```
-
-2. Run the Python script:
-   ```bash
-   python etl_pipeline.py
-   ```
-
-3. View the results:
-   - The transformed data will be saved in a file named `Countries_by_GDP.csv`.
-   - The SQLite database `World_Economies.db` will contain the GDP data.
-
-4. Query the database:
-   - Open the SQLite database using your favorite SQLite viewer.
-   - Run queries such as:
-     ```sql
-     SELECT * FROM Countries_by_GDP WHERE GDP_USD_billions >= 100;
-     ```
