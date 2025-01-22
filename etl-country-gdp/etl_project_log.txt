@@ -1,0 +1,10 @@
+2025-01-23 04:47:23 - ETL pipeline started.
+2025-01-23 04:47:23 - Starting data extraction...
+2025-01-23 04:47:28 - Data extraction completed.
+2025-01-23 04:47:28 - Starting data transformation...
+2025-01-23 04:47:28 - Data transformation completed.
+2025-01-23 04:47:28 - Data saved to CSV file at Countries_by_GDP.csv
+2025-01-23 04:47:28 - Data loaded into database table: Countries_by_GDP
+2025-01-23 04:47:28 - Running query: SELECT * FROM Countries_by_GDP WHERE GDP_USD_billions >= 100
+2025-01-23 04:47:28 - Query execution completed.
+2025-01-23 04:47:28 - ETL pipeline completed successfully.

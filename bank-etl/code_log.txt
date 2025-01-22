@@ -1,0 +1,15 @@
+2025-01-23 04:40:23,142 - Starting the extraction from the URL.
+2025-01-23 04:40:26,511 - An error occured: Missing optional dependency 'lxml'.  Use pip or conda to install lxml.
+2025-01-23 04:41:47,011 - Starting the extraction from the URL.
+2025-01-23 04:41:48,335 - Data extraction completed.
+2025-01-23 04:41:48,335 - Starting the data transformation.
+2025-01-23 04:41:48,355 - Data transformation completed.
+2025-01-23 04:41:48,356 - MC_EUR_Billion[4]: 146.86
+2025-01-23 04:41:48,356 - Started the data load to the CSV.
+2025-01-23 04:41:48,362 - Data successfully dave to ./Largest_banks_data.csv.
+2025-01-23 04:41:48,362 - started loading the data to the database.
+2025-01-23 04:41:48,396 - Data successfully loaded to the sqlite database.
+2025-01-23 04:41:48,397 - Executing query: SELECT * FROM Largest_banks
+2025-01-23 04:41:48,419 - Executing query: SELECT AVG(MC_GBP_Billion) FROM Largest_banks
+2025-01-23 04:41:48,427 - Executing query: SELECT Name FROM Largest_banks LIMIT 5
+2025-01-23 04:41:48,439 - All tasks completed successfully.
